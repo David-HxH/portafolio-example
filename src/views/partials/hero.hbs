@@ -1,0 +1,30 @@
+<section class="relative min-h-[819px] flex flex-col items-center justify-center px-6 text-center overflow-hidden">
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary/10 rounded-full blur-[120px]"></div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto space-y-8">
+        <h1 class="font-headline font-extrabold text-5xl md:text-7xl tracking-tight leading-tight">
+            {{{data.title}}}
+        </h1>
+        <p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+            {{{data.subtitle}}}
+        </p>
+        
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+            <a href="#projects" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold rounded-lg hover:shadow-[0_10px_30px_rgba(173,198,255,0.2)] transition-all active:scale-95">
+                {{data.ctaPrimaryText}}
+            </a>
+            <a href="{{../siteConfig.cvUrl}}" download class="w-full sm:w-auto px-8 py-4 border border-outline-variant/30 text-on-surface font-bold rounded-lg hover:bg-surface-container-high transition-all active:scale-95">
+                {{data.ctaSecondaryText}}
+            </a>
+        </div>
+        
+        <div class="flex items-center justify-center gap-6 mt-12">
+            {{#each data.socials}}
+            <a class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary/50 hover:bg-surface-container-high transition-all duration-300" href="{{this.url}}" title="{{this.name}}">
+                <i class="{{this.icon}} text-2xl"></i>
+            </a>
+            {{/each}}
+        </div>
+    </div>
+</section>

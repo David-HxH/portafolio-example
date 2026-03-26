@@ -1,0 +1,48 @@
+<section id="stack" class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="font-headline font-extrabold text-4xl md:text-5xl mb-4">Stack Tecnológico</h2>
+            <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">Herramientas y tecnologías que utilizo para crear soluciones robustas y escalables</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Frontend -->
+            <div class="bg-surface-container p-6 rounded-xl border border-outline-variant/20">
+                <h3 class="font-headline font-bold text-xl mb-4 text-primary">Frontend</h3>
+                <div class="space-y-3">
+                    {{#each data.frontend}}
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-secondary">{{this.icon}}</span>
+                        <span class="text-on-surface">{{this.name}}</span>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="bg-surface-container p-6 rounded-xl border border-outline-variant/20">
+                <h3 class="font-headline font-bold text-xl mb-4 text-primary">Backend</h3>
+                <div class="space-y-3">
+                    {{#each data.backend}}
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-secondary">{{this.icon}}</span>
+                        <span class="text-on-surface">{{this.name}}</span>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <!-- DevOps -->
+            <div class="bg-surface-container p-6 rounded-xl border border-outline-variant/20">
+                <h3 class="font-headline font-bold text-xl mb-4 text-primary">DevOps</h3>
+                <p class="text-on-surface-variant text-sm">{{data.devops}}</p>
+            </div>
+
+            <!-- Design -->
+            <div class="bg-surface-container p-6 rounded-xl border border-outline-variant/20">
+                <h3 class="font-headline font-bold text-xl mb-4 text-primary">Design</h3>
+                <p class="text-on-surface-variant text-sm">{{data.design}}</p>
+            </div>
+        </div>
+    </div>
+</section>

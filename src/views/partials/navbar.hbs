@@ -1,0 +1,18 @@
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-2xl shadow-black/20">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+        <div class="text-xl font-extrabold tracking-tighter text-[#e5e2e3] dark:text-[#e5e2e3]">
+            {{siteConfig.brandName}}
+        </div>
+        <div class="hidden md:flex items-center space-y-0 space-x-8 font-manrope font-bold tracking-tight text-sm">
+            {{#each siteConfig.navLinks}}
+                <a class="text-[#e5e2e3]/70 hover:text-[#e5e2e3] transition-colors" href="{{this.url}}">{{this.label}}</a>
+            {{/each}}
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="{{siteConfig.cvUrl}}" download class="hidden md:flex items-center gap-2 bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2 rounded-lg font-bold text-sm hover:shadow-[0_0_20px_rgba(173,198,255,0.3)] transition-all active:scale-95 duration-200">
+                Download CV
+            </a>
+            <div class="material-symbols-outlined text-[#adc6ff] cursor-pointer hover:bg-[#2a2a2b] p-2 rounded-lg transition-all" data-icon="mail">mail</div>
+        </div>
+    </div>
+</nav>

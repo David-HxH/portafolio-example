@@ -1,0 +1,25 @@
+<section id="about" class="py-24 px-6 bg-surface-container-lowest">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="font-headline font-extrabold text-4xl md:text-5xl">{{data.title}}</h2>
+                <div class="text-on-surface-variant text-lg leading-relaxed">
+                    {{{data.description}}}
+                </div>
+                <div class="flex gap-8 pt-4">
+                    <div class="text-center">
+                        <div class="font-headline font-extrabold text-3xl text-primary">{{data.stats.yearsExp}}</div>
+                        <div class="text-on-surface-variant text-sm">Años de Experiencia</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="font-headline font-extrabold text-3xl text-primary">{{data.stats.projectsCount}}</div>
+                        <div class="text-on-surface-variant text-sm">Proyectos Completados</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="{{data.imageUrl}}" alt="Profile" class="w-80 h-80 object-cover rounded-2xl shadow-2xl" />
+            </div>
+        </div>
+    </div>
+</section>

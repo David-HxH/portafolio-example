@@ -1,0 +1,16 @@
+<footer class="bg-surface-container py-12 px-6 border-t border-outline-variant/20">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-on-surface-variant">
+                © 2024 {{siteConfig.brandName}}. Todos los derechos reservados.
+            </div>
+            <div class="flex items-center gap-6">
+                {{#each siteConfig.navLinks}}
+                <a href="{{this.url}}" class="text-on-surface-variant hover:text-primary transition-colors">
+                    {{this.label}}
+                </a>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</footer>

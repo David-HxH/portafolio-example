@@ -1,0 +1,30 @@
+<section class="max-w-4xl mx-auto px-8 py-32 space-y-16" id="experience">
+    <div class="text-center space-y-4">
+        <h2 class="font-headline text-3xl md:text-4xl font-bold tracking-tight">Experiencia</h2>
+        <div class="h-1 w-12 bg-primary mx-auto rounded-full"></div>
+    </div>
+    
+    <div class="space-y-12">
+        {{#each data}}
+        <div class="relative pl-12 border-l border-outline-variant/30 {{#if @last}}pb-4{{else}}pb-12{{/if}}">
+            <div class="absolute left-[-9px] top-0 w-4 h-4 rounded-full {{#if (isEven @index)}}bg-primary ring-primary/20{{else}}bg-outline-variant ring-outline-variant/20{{/if}} ring-4"></div>
+            
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4 gap-2">
+                <h3 class="text-xl font-bold font-headline">{{this.role}}</h3>
+                <span class="text-sm font-bold px-3 py-1 bg-surface-container-highest rounded-lg {{#if (isEven @index)}}text-primary{{else}}text-on-surface-variant{{/if}}">{{this.period}}</span>
+            </div>
+            
+            <p class="text-on-surface-variant font-semibold mb-4">{{this.company}}</p>
+            
+            <ul class="space-y-3 text-on-surface-variant">
+                {{#each this.achievements}}
+                <li class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+                    <span>{{this}}</span>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        {{/each}}
+    </div>
+</section>

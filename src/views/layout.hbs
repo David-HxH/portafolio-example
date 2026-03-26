@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{pageTitle}}</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#adc6ff",
+                        "primary-container": "#4d8eff",
+                        "on-primary": "#002e6a",
+                        "primary-fixed": "#d8e2ff",
+                        "secondary": "#4edea3",
+                        "secondary-fixed-dim": "#4edea3",
+                        "tertiary": "#ffb786",
+                        "background": "#131314",
+                        "surface": "#131314",
+                        "on-surface": "#e5e2e3",
+                        "on-surface-variant": "#c2c6d6",
+                        "surface-container": "#201f20",
+                        "surface-container-high": "#2a2a2b",
+                        "surface-container-highest": "#353436",
+                        "surface-container-lowest": "#0e0e0f",
+                        "outline-variant": "#424754"
+                        // Agrega el resto de tus colores aquí...
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        body { background-color: #131314; color: #e5e2e3; font-family: 'Inter', sans-serif; }
+        .glass-nav { background: rgba(19, 19, 20, 0.6); backdrop-filter: blur(12px); }
+        html { scroll-behavior: smooth; }
+        .nav-link-active { color: #adc6ff !important; position: relative; }
+        .nav-link-active::after { 
+            content: ''; 
+            position: absolute; 
+            bottom: -8px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            width: 4px; 
+            height: 4px; 
+            background-color: #adc6ff; 
+            border-radius: 50%; 
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
+
+    {{> navbar}}
+
+    {{#if successMessage}}
+    <div class="fixed top-24 left-1/2 transform -translate-x-1/2 z-50 bg-secondary text-on-primary px-6 py-3 rounded-lg shadow-lg font-medium">
+        {{successMessage}}
+    </div>
+    {{/if}}
+
+    <main class="pt-24">
+        {{{body}}}
+    </main>
+
+    {{> footer}}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.glass-nav a[href^="#"]');
+            
+            function updateActiveLink() {
+                const scrollY = window.pageYOffset;
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100; // Offset para activar antes de llegar exactamente
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    
+                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                        // Remover clase activa de todos los enlaces
+                        navLinks.forEach(link => link.classList.remove('nav-link-active'));
+                        
+                        // Agregar clase activa al enlace correspondiente
+                        const activeLink = document.querySelector(`.glass-nav a[href="#${sectionId}"]`);
+                        if (activeLink) {
+                            activeLink.classList.add('nav-link-active');
+                        }
+                    }
+                });
+            }
+            
+            // Actualizar al cargar la página
+            updateActiveLink();
+            
+            // Actualizar durante el scroll
+            window.addEventListener('scroll', updateActiveLink);
+        });
+    </script>
+
+</body>
+</html>
