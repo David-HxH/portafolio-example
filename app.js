@@ -1,9 +1,13 @@
 const app = require("./server");
-const { sequelize } = require("./src/models");
+const { verificarConexion, sequelize } = require("./config/db");
 
-const PORT = process.env.PORT || 4000;
+(async () => {
+    await verificarConexion();
 
-app.listen(PORT, () => {
-    sequelize.sync()
-    console.log(`Server is running on port ${PORT}`);
-});
+    const PORT = process.env.PORT || 4000;
+
+    app.listen(PORT, async () => {
+        await sequelize.sync();
+        console.log(`Server is running on port ${PORT}`);
+    });
+})();

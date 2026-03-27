@@ -1,5 +1,4 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = new Sequelize('postgres://admin:admin123@localhost:5432/portafolio');
 
 // 1. Tabla Principal y Configuración
 const Portfolio = sequelize.define('Portfolio', {
