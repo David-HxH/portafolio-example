@@ -105,7 +105,7 @@ const portfolioData = {
             yearsExp: "6+",
             projectsCount: "40+"
         },
-        imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDwddjWZTYj0wW-DI3FZpp0nTIv1B6ufNWBW4Zhanbm86Oj_mrSHw9L34c5vCycqHDekZ9nOEvynihfLXjfj8YzxXpB08tKGnQUkaqP4o1fRG5FeVnP1rSqH1gycJcrQkS7lMu8q5L8enJpHSE45t31kkc4r-MjvZqBBmyPaRY8-kbgwoL07gmiftGXNnuQXA8wxbHFt3T1S2auCwK7eP9ucTiSWGcJ-nCVUIc1GV-L4jsvsj4GPCbNBIOTqnpqcwPWLBri2hO4qQ"
+        imageUrl: "/images/profile.webp",
     },
 
     // Datos de Contacto y Footer
