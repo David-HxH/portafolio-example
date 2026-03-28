@@ -1,5 +1,6 @@
 const app = require("./server");
 const { verificarConexion, sequelize } = require("./config/db");
+const models = require("./src/models");
 
 (async () => {
     await verificarConexion();
