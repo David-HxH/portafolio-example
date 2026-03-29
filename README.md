@@ -1,6 +1,11 @@
-# 🌐 Mi Portafolio Profesional – David Mondaca
+<h1 align="center"> 🌐 Mi Portafolio Profesional – David Mondaca</h1>
+
+<p align="center">
+  <img src=".public/gifs/hide-car.gif" width="300"/>
+</p>
 
 Bienvenido a mi portafolio web. Este proyecto reúne mis trabajos, habilidades y proyectos desarrollados durante mi aprendizaje en desarrollo web, con un enfoque en diseño limpio, responsive y buenas prácticas.
+
 
 ## 🚀 Tecnologías utilizadas
 - **HTML5**
@@ -25,13 +30,20 @@ Este proyecto es también una práctica de:
 ## 🔗 Demo en línea
 Puedes ver el sitio aquí:
 
-👉 **https://david-hxh.github.io/mi-portafolio**
+👉 **https://portafolio-david-mondaca.vercel.app/**
 
 ## 📸 Vista previa
-*(agregar una captura de pantalla más adelante)*
+![Captura](public/images/web-portafolio.png)
 
 ## 📂 Cómo clonar este repositorio
 Si deseas revisar el código o modificarlo:
 
 ```bash
 git clone https://github.com/David-HxH/portafolio-example.git
+cd portafolio-example
+```
+## 📬 Contacto
+Si deseas contactarme, puedes hacerlo a través de:
+- **Email:** [David Mondaca](mailto:David_ems@live.cl)
+- **LinkedIn:** [David Mondaca](https://www.linkedin.com/in/david-mondaca/)
+- **instagram:** [@david_mondaca](https://www.instagram.com/david_mondaca/)
