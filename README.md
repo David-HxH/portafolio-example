@@ -6,13 +6,8 @@
 
 Bienvenido a mi portafolio web. Este proyecto reúne mis trabajos, habilidades y proyectos desarrollados durante mi aprendizaje en desarrollo web, con un enfoque en diseño limpio, responsive y buenas prácticas.
 
-
-## 🚀 Tecnologías utilizadas
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **Bootstrap**
-- **Git & GitHub**
+## 🧑‍💻 Sobre mí
+Soy un desarrollador web apasionado por crear experiencias digitales innovadoras y responsivas. Me especializo en el desarrollo frontend con tecnologías modernas y siempre busco mejorar mis habilidades técnicas.
 
 ## 🎯 Objetivo del proyecto
 Crear una landing page moderna que funcione como presentación personal, mostrando:
@@ -26,6 +21,22 @@ Este proyecto es también una práctica de:
 - Estructura Mobile First
 - Uso de Git para control de versiones
 - Publicación con GitHub Pages
+
+## 🚀 Tecnologías utilizadas
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Bootstrap**
+- **Node.js**
+- **Express.js**
+- **Handlebars**
+- **PosgreSQL**
+- **Git & GitHub**
+
+## 🛠️ Funcionalidades principales
+- **Responsive Design**: El portafolio se adapta a diferentes tamaños de pantalla.
+- **Interactividad**: Funcionalidades dinámicas implementadas con JavaScript.
+- **Gestión de Contenido**: Uso de Handlebars para la generación de contenido.
 
 ## 🔗 Demo en línea
 Puedes ver el sitio aquí:
