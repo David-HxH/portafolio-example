@@ -1,7 +1,7 @@
-<h1 align="center"> 🌐 Mi Portafolio Profesional – David Mondaca</h1>
+<h1 align="center"> 🌐 Portafolio – David Mondaca</h1>
 
 <p align="center">
-  <img src="./public/gifs/hide-cat.gif" width="300"/>
+  <img src="./public/gifs/hide-cat.gif" width="200"/>
 </p>
 
 Bienvenido a mi portafolio web. Este proyecto reúne mis trabajos, habilidades y proyectos desarrollados durante mi aprendizaje en desarrollo web, con un enfoque en diseño limpio, responsive y buenas prácticas.
@@ -41,9 +41,7 @@ Si deseas revisar el código o modificarlo:
 ```bash
 git clone https://github.com/David-HxH/portafolio-example.git
 ```
-```bash
-cd portafolio-example
-```
+
 ## 📬 Contacto
 Si deseas contactarme, puedes hacerlo a través de:
 - **Email:** [David Mondaca](mailto:David_ems@live.cl)
