@@ -52,6 +52,15 @@ Si deseas revisar el código o modificarlo:
 ```bash
 git clone https://github.com/David-HxH/portafolio-example.git
 ```
+```bash
+cd portafolio-example
+```
+```bash
+pnpm install
+```
+```bash
+pnpm start
+```
 
 ## 📬 Contacto
 Si deseas contactarme, puedes hacerlo a través de:
