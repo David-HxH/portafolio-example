@@ -36,12 +36,16 @@
 
     function toggleMobileMenu() {
         const isOpen = mobileMenu.classList.contains('opacity-100');
+        const icon = mobileMenuButton.querySelector('.material-symbols-outlined');
+        
         if (isOpen) {
             mobileMenu.classList.remove('opacity-100');
             mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+            icon.textContent = 'menu';
         } else {
             mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
             mobileMenu.classList.add('opacity-100');
+            icon.textContent = 'close';
         }
     }
 

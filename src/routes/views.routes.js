@@ -10,7 +10,7 @@ const portfolioData = {
         navLinks: [
             { label: "Projects", url: "#projects" },
             { label: "Stack", url: "#stack" },
-            { label: "Experience", url: "#experience" },
+            // { label: "Experience", url: "#experience" },
             { label: "About", url: "#about" },
             { label: "Contact", url: "#contact" }
         ]
