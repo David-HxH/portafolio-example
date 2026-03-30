@@ -6,7 +6,7 @@ const portfolioData = {
 
     siteConfig: {
         brandName: "PORTAFOLIO", // Tu nombre o marca personal
-        cvUrl: "#", // URL de tu CV - reemplaza con el link real
+        cvUrl: "/files/CV-David_Mondaca.pdf", // URL de tu CV - reemplaza con el link real
         navLinks: [
             { label: "Projects", url: "#projects" },
             { label: "Stack", url: "#stack" },

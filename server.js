@@ -17,4 +17,8 @@ app.use(express.static('public'));
 
 app.use(require('./src/routes'));
 
+app.get('/download-cv', (req, res) => {
+    res.download(path.join(__dirname, 'public/files/CV-David-Mondaca.pdf'));
+});
+
 module.exports = app
