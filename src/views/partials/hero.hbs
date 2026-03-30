@@ -14,14 +14,14 @@
             <a href="#projects" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold rounded-lg hover:shadow-[0_10px_30px_rgba(173,198,255,0.2)] transition-all active:scale-95">
                 {{data.ctaPrimaryText}}
             </a>
-            <a href="{{../siteConfig.cvUrl}}" download class="w-full sm:w-auto px-8 py-4 border border-outline-variant/30 text-on-surface font-bold rounded-lg hover:bg-surface-container-high transition-all active:scale-95">
+            <a href="/download-cv" download class="w-full sm:w-auto px-8 py-4 border border-outline-variant/30 text-on-surface font-bold rounded-lg hover:bg-surface-container-high transition-all active:scale-95">
                 {{data.ctaSecondaryText}}
             </a>
         </div>
         
         <div class="flex items-center justify-center gap-6 mt-12">
             {{#each data.socials}}
-            <a class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary/50 hover:bg-surface-container-high transition-all duration-300" href="{{this.url}}" title="{{this.name}}">
+            <a class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary/50 hover:bg-surface-container-high transition-all duration-300" href="{{this.url}}" title="{{this.name}}" target="_blank" rel="noopener noreferrer">
                 <i class="{{this.icon}} text-2xl"></i>
             </a>
             {{/each}}

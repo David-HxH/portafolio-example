@@ -5,12 +5,12 @@ const portfolioData = {
     pageTitle: "Digital Architect | Web Developer Portfolio",
 
     siteConfig: {
-        brandName: "Digital Architect",
-        cvUrl: "#", // URL de tu CV - reemplaza con el link real
+        brandName: "PORTAFOLIO", // Tu nombre o marca personal
+        cvUrl: "/files/CV-David_Mondaca.pdf", // URL de tu CV - reemplaza con el link real
         navLinks: [
             { label: "Projects", url: "#projects" },
             { label: "Stack", url: "#stack" },
-            { label: "Experience", url: "#experience" },
+            // { label: "Experience", url: "#experience" },
             { label: "About", url: "#about" },
             { label: "Contact", url: "#contact" }
         ]
@@ -23,40 +23,33 @@ const portfolioData = {
         ctaPrimaryText: "Ver Proyectos Destacados",
         ctaSecondaryText: "Descargar CV (PDF)",
         socials: [
-            { icon: "fab fa-github", url: "#", name: "GitHub" },
-            { icon: "fab fa-linkedin-in", url: "#", name: "LinkedIn" },
-            { icon: "fab fa-youtube", url: "#", name: "YouTube" }
+            { icon: "fab fa-github", url: "https://github.com/David-HxH", name: "GitHub" },
+            { icon: "fab fa-linkedin-in", url: "https://www.linkedin.com/in/davidmondacasaavedra/", name: "LinkedIn" },
+            { icon: "fab fa-instagram", url: "https://www.instagram.com/david_ems.88/", name: "Instagram" }
         ]
     },
 
     // Array de Proyectos (el orden define la posición, el HBS alternará el layout)
     projectsData: [
         {
-            title: "Nexus Analytics Platform",
-            imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDxDMsnEcgSxs3zQjW7d0CEFKc1uAcy0k54QwpclHUehecyoPUx6Se6UB_pLNXV0IExFbl4QH_HsHNVDMOp5fms5aDOwTMmyGHq-QP07YXzjRPVtGtTj2nr1cjK2aYG0yNoTeZB7PnRvTLMHsqczG9vXfdUWtZxvjmcFS-NDUwknyJVWAE-Lr5KwuY-S_UjpPliujQ9aq9KmkFM9SZ568vF4N2El5xtHWM9-HoQVnnvm2XGfUkh5U_hnginU8LCW798har3X-XJ4w",
-            problem: "Sistemas legados lentos incapaces de procesar millones de eventos en tiempo real.",
-            solution: "Una arquitectura basada en eventos con Next.js y GraphQL que redujo la latencia en un 60%.",
-            tags: ["Next.js", "GraphQL", "PostgreSQL"],
-            liveDemoUrl: "#",
-            repoUrl: "#"
+            title: "Kanban Pro",
+            description: "Aplicación web de gestión de tareas tipo kanban con drag & drop, diseñada para mejorar la productividad en proyectos personales o de equipo.",
+            imageUrl: "/images/portada-kanbanpro.png", // o png
+            problem: "Dificultad para organizar tareas y visualizar el flujo de trabajo en proyectos personales o de equipo.",
+            solution: "Aplicación tipo kanban que permite gestionar tareas con drag & drop y seguimiento visual del progreso.",
+            tags: ["JavaScript", "Node.js", "Express", "CSS"],
+            liveDemoUrl: "https://tu-kanban.vercel.app",
+            repoUrl: "https://github.com/David-HxH/KanbasPRO"
         },
         {
-            title: "Veloce FinTech UI",
-            imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuB8A2vAs_eu-NmI5ombX94lrxwe-1nQi4teXpOTbsnN_ujWjy4LkuTIoxwBlSsvpRwzdanO2ttuJOsUyjsKrL6uThqgDacew3qA2BW8uZ8mfKaXLB2RryD9LBtdE967HIhQoXg0lEp7s0_G3O_B3qomXXbpIvzQZ0rMEt9Xx_1aE66mwDIyB4UUrgZazaiP9IuwasKqbX_MPmq9hmwpAESFD8zjvXBITgvr0EElUfbmGbH2utNzfk6FUWIV8CNKPmcg78LXCX-cTA",
-            problem: "Interfaces financieras complejas que resultaban en una alta tasa de abandono de usuarios.",
-            solution: "Rediseño total centrado en accesibilidad y flujos simplificados, logrando un aumento del 40% en retención.",
-            tags: ["React Native", "Tailwind CSS", "Node.js"],
-            liveDemoUrl: "#",
-            repoUrl: "#"
-        },
-        {
-            title: "Core Infrastructure Engine",
-            imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuCvvn9hAtC7xEK1Pqv3aoX7uRrNjfur1FX4-5TpFLoASFXm4lSEMZ8c76ENT4AfgdEKNZo3ohiRQ4J5VEJqEKlnoXVYCiV_bifv2D3tzcm99XClmRf3W3Yqm9Zjy9OcR54t-F5okh0g_Q1PG-r-MjibwJDEZEaFA-3e3_Ap-vVJYC19IYzFXuE-_7WGrm1LxpMFKhhELPLFtYeVHMBlYizesh7jPBtWt1k_TwuMpbCLqrKFaPS6_Wu0rXtWi0IV4QVQli5H3d1UqA",
-            problem: "Procesos de despliegue manuales propensos a errores humanos.",
-            solution: "Implementación de pipelines CI/CD automatizados y orquestación con Docker, eliminando fallos de producción en un 95%.",
-            tags: ["Docker", "AWS", "Terraform"],
-            liveDemoUrl: "#",
-            repoUrl: "#"
+            title: "Gourmet GO",
+            description: "Buscador de recetas que consume una API externa y permite filtrar resultados dinámicamente, ideal para encontrar inspiración culinaria de forma rápida y personalizada.",
+            imageUrl: "/images/portada-gourmetgo.png", // o png
+            problem: "Dificultad para encontrar recetas de forma rápida y personalizada.",
+            solution: "Buscador de recetas que consume una API externa y permite filtrar resultados dinámicamente.",
+            tags: ["React", "API REST", "CSS"],
+            liveDemoUrl: "https://david-hxh.github.io/GourmetGO/",
+            repoUrl: "https://github.com/David-HxH/GourmetGO"
         }
     ],
 
@@ -91,7 +84,7 @@ const portfolioData = {
         ],
         backend: [
             { name: "PostgreSQL / GraphQL", icon: "database" },
-            { name: "Node.js / Go", icon: "terminal" }
+            { name: "Node.js / Express", icon: "terminal" }
         ],
         devops: "Docker, Git, CI/CD, AWS",
         design: "Figma, Framer, Motion"
@@ -102,8 +95,8 @@ const portfolioData = {
         title: "Arquitectura con Alma",
         description: "Mi pasión no es solo escribir código, sino diseñar experiencias que trasciendan la pantalla. Creo en la tecnología como un habilitador de negocios y en la simplicidad como la máxima sofisticación.<br><br>Más allá de las líneas de código, me enfoco en la comunicación asertiva, la empatía con el usuario final y la resolución creativa de problemas complejos. Si buscas un socio técnico que entienda tus objetivos comerciales tanto como el stack tecnológico, hablemos.",
         stats: {
-            yearsExp: "6+",
-            projectsCount: "40+"
+            yearsExp: "2+",
+            projectsCount: "20+"
         },
         imageUrl: "/images/profile.webp",
     },
