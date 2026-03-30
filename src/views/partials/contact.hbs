@@ -93,16 +93,16 @@
                 form.reset();
 
                 status.textContent = "✅ Mensaje enviado correctamente";
-                status.className = "text-green-400";
+                status.className = "text-green-400 pt-2";
 
             } else {
                 status.textContent = "❌ Error al enviar el mensaje";
-                status.className = "text-red-400";
+                status.className = "text-red-400 pt-2";
             }
 
         } catch (error) {
             status.textContent = "❌ Error de conexión";
-            status.className = "text-red-400";
+            status.className = "text-red-400 pt-2";
         }
     });
 </script>

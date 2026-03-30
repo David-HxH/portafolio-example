@@ -1,48 +1,131 @@
 <section id="stack" class="py-24 px-6">
     <div class="max-w-7xl mx-auto">
+        
+        <!-- Header -->
         <div class="text-center mb-16">
-            <h2 class="font-headline font-extrabold text-4xl md:text-5xl mb-4">Stack Tecnológico</h2>
-            <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">Herramientas y tecnologías que utilizo para crear soluciones robustas y escalables</p>
+            <h2 class="font-headline font-extrabold text-4xl md:text-5xl mb-4">
+                Stack Tecnológico
+            </h2>
+            <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">
+                Herramientas y tecnologías que utilizo para crear soluciones robustas y escalables
+            </p>
         </div>
 
+        <!-- Grid -->
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
             <!-- Frontend -->
-            <div class="bg-surface-container p-6 rounded-xl border border-outline-variant/20">
-                <h3 class="font-headline font-bold text-xl mb-4 text-primary">Frontend</h3>
+            <div class="group bg-surface-container p-6 rounded-xl border border-outline-variant/20 
+                        transition-all duration-300 
+                        hover:-translate-y-2 
+                        hover:border-primary/40 
+                        hover:shadow-[0_10px_40px_rgba(0,0,0,0.3)]
+                        hover:shadow-[0_0_25px_rgba(173,198,255,0.15)]">
+
+                <h3 class="font-headline font-bold text-xl mb-4 text-primary 
+                           transition-colors duration-300 
+                           group-hover:text-secondary">
+                    Frontend
+                </h3>
+
                 <div class="space-y-3">
                     {{#each data.frontend}}
-                    <div class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-secondary">{{this.icon}}</span>
-                        <span class="text-on-surface">{{this.name}}</span>
+                    <div class="flex items-center gap-3 
+                                transition-all duration-300 
+                                group-hover:translate-x-1">
+
+                        <span class="material-symbols-outlined text-secondary 
+                                     transition-all duration-300 
+                                     group-hover:scale-110 
+                                     group-hover:text-primary">
+                            {{this.icon}}
+                        </span>
+
+                        <span class="text-on-surface">
+                            {{this.name}}
+                        </span>
                     </div>
                     {{/each}}
                 </div>
             </div>
 
             <!-- Backend -->
-            <div class="bg-surface-container p-6 rounded-xl border border-outline-variant/20">
-                <h3 class="font-headline font-bold text-xl mb-4 text-primary">Backend</h3>
+            <div class="group bg-surface-container p-6 rounded-xl border border-outline-variant/20 
+                        transition-all duration-300 
+                        hover:-translate-y-2 
+                        hover:border-primary/40 
+                        hover:shadow-[0_10px_40px_rgba(0,0,0,0.3)]
+                        hover:shadow-[0_0_25px_rgba(173,198,255,0.15)]">
+
+                <h3 class="font-headline font-bold text-xl mb-4 text-primary 
+                           transition-colors duration-300 
+                           group-hover:text-secondary">
+                    Backend
+                </h3>
+
                 <div class="space-y-3">
                     {{#each data.backend}}
-                    <div class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-secondary">{{this.icon}}</span>
-                        <span class="text-on-surface">{{this.name}}</span>
+                    <div class="flex items-center gap-3 
+                                transition-all duration-300 
+                                group-hover:translate-x-1">
+
+                        <span class="material-symbols-outlined text-secondary 
+                                     transition-all duration-300 
+                                     group-hover:scale-110 
+                                     group-hover:text-primary">
+                            {{this.icon}}
+                        </span>
+
+                        <span class="text-on-surface">
+                            {{this.name}}
+                        </span>
                     </div>
                     {{/each}}
                 </div>
             </div>
 
             <!-- DevOps -->
-            <div class="bg-surface-container p-6 rounded-xl border border-outline-variant/20">
-                <h3 class="font-headline font-bold text-xl mb-4 text-primary">DevOps</h3>
-                <p class="text-on-surface-variant text-sm">{{data.devops}}</p>
+            <div class="group bg-surface-container p-6 rounded-xl border border-outline-variant/20 
+                        transition-all duration-300 
+                        hover:-translate-y-2 
+                        hover:border-primary/40 
+                        hover:shadow-[0_10px_40px_rgba(0,0,0,0.3)]
+                        hover:shadow-[0_0_25px_rgba(173,198,255,0.15)]">
+
+                <h3 class="font-headline font-bold text-xl mb-4 text-primary 
+                           transition-colors duration-300 
+                           group-hover:text-secondary">
+                    DevOps
+                </h3>
+
+                <p class="text-on-surface-variant text-sm 
+                          transition-all duration-300 
+                          group-hover:text-on-surface">
+                    {{data.devops}}
+                </p>
             </div>
 
             <!-- Design -->
-            <div class="bg-surface-container p-6 rounded-xl border border-outline-variant/20">
-                <h3 class="font-headline font-bold text-xl mb-4 text-primary">Design</h3>
-                <p class="text-on-surface-variant text-sm">{{data.design}}</p>
+            <div class="group bg-surface-container p-6 rounded-xl border border-outline-variant/20 
+                        transition-all duration-300 
+                        hover:-translate-y-2 
+                        hover:border-primary/40 
+                        hover:shadow-[0_10px_40px_rgba(0,0,0,0.3)]
+                        hover:shadow-[0_0_25px_rgba(173,198,255,0.15)]">
+
+                <h3 class="font-headline font-bold text-xl mb-4 text-primary 
+                           transition-colors duration-300 
+                           group-hover:text-secondary">
+                    Design
+                </h3>
+
+                <p class="text-on-surface-variant text-sm 
+                          transition-all duration-300 
+                          group-hover:text-on-surface">
+                    {{data.design}}
+                </p>
             </div>
+
         </div>
     </div>
 </section>
