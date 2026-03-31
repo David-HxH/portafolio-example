@@ -5,13 +5,13 @@ const portfolioData = {
     pageTitle: "Digital Architect | Web Developer Portfolio",
 
     siteConfig: {
-        brandName: "PORTAFOLIO", // Tu nombre o marca personal
+        brandName: "David Mondaca", // Tu nombre o marca personal
         cvUrl: "/files/CV-David_Mondaca.pdf", // URL de tu CV - reemplaza con el link real
         navLinks: [
+            { label: "About", url: "#about" },
             { label: "Projects", url: "#projects" },
             { label: "Stack", url: "#stack" },
             // { label: "Experience", url: "#experience" },
-            { label: "About", url: "#about" },
             { label: "Contact", url: "#contact" }
         ]
     },
@@ -27,6 +27,17 @@ const portfolioData = {
             { icon: "fab fa-linkedin-in", url: "https://www.linkedin.com/in/davidmondacasaavedra/", name: "LinkedIn" },
             { icon: "fab fa-instagram", url: "https://www.instagram.com/david_ems.88/", name: "Instagram" }
         ]
+    },
+
+    // Datos de Sobre Mí
+    aboutData: {
+        title: "Arquitectura con Alma",
+        description: "Mi pasión no es solo escribir código, sino diseñar experiencias que trasciendan la pantalla. Creo en la tecnología como un habilitador de negocios y en la simplicidad como la máxima sofisticación.<br><br>Más allá de las líneas de código, me enfoco en la comunicación asertiva, la empatía con el usuario final y la resolución creativa de problemas complejos. Si buscas un socio técnico que entienda tus objetivos comerciales tanto como el stack tecnológico, hablemos.",
+        stats: {
+            yearsExp: "2+",
+            projectsCount: "20+"
+        },
+        imageUrl: "/images/profile.webp",
     },
 
     // Array de Proyectos (el orden define la posición, el HBS alternará el layout)
@@ -78,7 +89,7 @@ const portfolioData = {
     // Datos del Stack Tecnológico (listos para mapear si hacemos el partial de Stack)
     stackData: {
         frontend: [
-            { name: "React / Next.js", icon: "layers" },
+            { name: "HTML / CSS / JavaScript", icon: "layers" },
             { name: "Tailwind CSS", icon: "palette" },
             { name: "TypeScript", icon: "javascript" }
         ],
@@ -87,18 +98,7 @@ const portfolioData = {
             { name: "Node.js / Express", icon: "terminal" }
         ],
         devops: "Docker, Git, CI/CD, AWS",
-        design: "Figma, Framer, Motion"
-    },
-
-    // Datos de Sobre Mí
-    aboutData: {
-        title: "Arquitectura con Alma",
-        description: "Mi pasión no es solo escribir código, sino diseñar experiencias que trasciendan la pantalla. Creo en la tecnología como un habilitador de negocios y en la simplicidad como la máxima sofisticación.<br><br>Más allá de las líneas de código, me enfoco en la comunicación asertiva, la empatía con el usuario final y la resolución creativa de problemas complejos. Si buscas un socio técnico que entienda tus objetivos comerciales tanto como el stack tecnológico, hablemos.",
-        stats: {
-            yearsExp: "2+",
-            projectsCount: "20+"
-        },
-        imageUrl: "/images/profile.webp",
+        design: "Figma, Motion, Gimp"
     },
 
     // Datos de Contacto y Footer
