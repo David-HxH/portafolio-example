@@ -49,7 +49,7 @@ const portfolioData = {
             problem: "Dificultad para organizar tareas y visualizar el flujo de trabajo en proyectos personales o de equipo.",
             solution: "Aplicación tipo kanban que permite gestionar tareas con drag & drop y seguimiento visual del progreso.",
             tags: ["JavaScript", "Node.js", "Express", "CSS"],
-            liveDemoUrl: "https://tu-kanban.vercel.app",
+            liveDemoUrl: "https://kanban-pro-gamma.vercel.app/login",
             repoUrl: "https://github.com/David-HxH/KanbasPRO"
         },
         {
