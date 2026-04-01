@@ -47,7 +47,7 @@ const portfolioData = {
             description: "Aplicación web de gestión de tareas tipo kanban con drag & drop, diseñada para mejorar la productividad en proyectos personales o de equipo.",
             imageUrl: "/images/portada-kanbanpro.png", // o png
             problem: "Dificultad para organizar tareas y visualizar el flujo de trabajo en proyectos personales o de equipo.",
-            solution: "Aplicación tipo kanban que permite gestionar tareas con drag & drop y seguimiento visual del progreso.",
+            solution: "Proporciona una solución sencilla e intuitiva para gestionar tareas y visualizar el progreso del proyecto.",
             tags: ["JavaScript", "Node.js", "Express", "CSS"],
             liveDemoUrl: "https://kanban-pro-gamma.vercel.app/login",
             repoUrl: "https://github.com/David-HxH/KanbasPRO"
@@ -57,7 +57,7 @@ const portfolioData = {
             description: "Buscador de recetas que consume una API externa y permite filtrar resultados dinámicamente, ideal para encontrar inspiración culinaria de forma rápida y personalizada.",
             imageUrl: "/images/portada-gourmetgo.png", // o png
             problem: "Dificultad para encontrar recetas de forma rápida y personalizada.",
-            solution: "Buscador de recetas que consume una API externa y permite filtrar resultados dinámicamente.",
+            solution: "Facilita la búsqueda y visualización de recetas internacionales y locales entregando una experiencia de usuario intuitiva.",
             tags: ["React", "API REST", "CSS"],
             liveDemoUrl: "https://david-hxh.github.io/GourmetGO/",
             repoUrl: "https://github.com/David-HxH/GourmetGO"
@@ -94,7 +94,7 @@ const portfolioData = {
             { name: "TypeScript", icon: "javascript" }
         ],
         backend: [
-            { name: "PostgreSQL / GraphQL", icon: "database" },
+            { name: "PostgreSQL / GraphQL / Sequelize", icon: "database" },
             { name: "Node.js / Express", icon: "terminal" }
         ],
         devops: "Docker, Git, CI/CD, AWS",
