@@ -1,0 +1,44 @@
+/* seguridad global */
+body {
+    overflow-x: hidden;
+}
+
+/* control local */
+#projects {
+    overflow: hidden;
+}
+
+.reveal {
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.8s ease;
+    will-change: opacity, transform;
+}
+
+/* Estados de entrada */
+.reveal-up {
+    transform: translateY(60px);
+}
+
+.reveal-left {
+    transform: translateX(-60px);
+}
+
+.reveal-right {
+    transform: translateX(60px);
+}
+
+/* Estado activo */
+.reveal.active {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* Imagen interna (zoom suave) */
+.reveal-img-inner {
+    transform: scale(1.08);
+    transition: transform 1.2s ease;
+}
+
+.reveal.active .reveal-img-inner {
+    transform: scale(1);
+}
