@@ -43,14 +43,14 @@ const portfolioData = {
     // Array de Proyectos (el orden define la posición, el HBS alternará el layout)
     projectsData: [
         {
-            title: "Kanban Pro",
-            description: "Aplicación web de gestión de tareas tipo kanban con drag & drop, diseñada para mejorar la productividad en proyectos personales o de equipo.",
-            imageUrl: "/images/portada-kanbanpro.png", // o png
-            problem: "Dificultad para organizar tareas y visualizar el flujo de trabajo en proyectos personales o de equipo.",
-            solution: "Proporciona una solución sencilla e intuitiva para gestionar tareas y visualizar el progreso del proyecto.",
-            tags: ["JavaScript", "Node.js", "Express", "CSS"],
-            liveDemoUrl: "https://kanban-pro-gamma.vercel.app/login",
-            repoUrl: "https://github.com/David-HxH/KanbasPRO"
+            title: "Mind Flow",
+            description: "Aplicación web full stack de productividad enfocada en la gestión visual de ideas y tareas mediante un tablero Kanban con drag & drop, autenticación segura y experiencia moderna.",
+            imageUrl: "/images/portada-mindflow.png",
+            problem: "Organizar ideas, tareas y pequeños proyectos personales suele volverse desordenado cuando no existe una forma clara de capturarlos, priorizarlos y visualizar su avance.",
+            solution: "Mind Flow ofrece un entorno visual e intuitivo donde cada usuario puede registrar ideas, moverlas entre etapas del flujo de trabajo y mantener un control claro sobre su progreso diario.",
+            tags: ["JavaScript", "Node.js", "Express", "PostgreSQL", "Tailwind CSS", "JWT"],
+            liveDemoUrl: "https://capturador-de-ideas.vercel.app/",
+            repoUrl: "https://github.com/David-HxH/capturador-de-ideas"
         },
         {
             title: "Gourmet GO",
@@ -90,15 +90,16 @@ const portfolioData = {
     stackData: {
         frontend: [
             { name: "HTML / CSS / JavaScript", icon: "layers" },
-            { name: "Tailwind CSS", icon: "palette" },
-            { name: "TypeScript", icon: "javascript" }
+            { name: "Tailwind CSS", icon: "palette" }
         ],
         backend: [
-            { name: "PostgreSQL / GraphQL / Sequelize", icon: "database" },
-            { name: "Node.js / Express", icon: "terminal" }
+            { name: "Node.js / Express", icon: "terminal" },
+            { name: "PostgreSQL / Sequelize", icon: "database" },
+            { name: "JWT Authentication", icon: "lock" },
+            { name: "REST API", icon: "api" }
         ],
-        devops: "Docker, Git, CI/CD, AWS",
-        design: "Figma, Motion, Gimp"
+        devops: "Git, CI/CD, Vercel",
+        design: "Figma, Motion, GIMP"
     },
 
     // Datos de Contacto y Footer
