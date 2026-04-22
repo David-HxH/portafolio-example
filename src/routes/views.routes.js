@@ -52,16 +52,16 @@ const portfolioData = {
             liveDemoUrl: "https://capturador-de-ideas.vercel.app/",
             repoUrl: "https://github.com/David-HxH/capturador-de-ideas"
         },
-        {
-            title: "Gourmet GO",
-            description: "Buscador de recetas que consume una API externa y permite filtrar resultados dinámicamente, ideal para encontrar inspiración culinaria de forma rápida y personalizada.",
-            imageUrl: "/images/portada-gourmetgo.png", // o png
-            problem: "Dificultad para encontrar recetas de forma rápida y personalizada.",
-            solution: "Facilita la búsqueda y visualización de recetas internacionales y locales entregando una experiencia de usuario intuitiva.",
-            tags: ["React", "API REST", "CSS"],
-            liveDemoUrl: "https://david-hxh.github.io/GourmetGO/",
-            repoUrl: "https://github.com/David-HxH/GourmetGO"
-        }
+        // {
+        //     title: "Gourmet GO",
+        //     description: "Buscador de recetas que consume una API externa y permite filtrar resultados dinámicamente, ideal para encontrar inspiración culinaria de forma rápida y personalizada.",
+        //     imageUrl: "/images/portada-gourmetgo.png", // o png
+        //     problem: "Dificultad para encontrar recetas de forma rápida y personalizada.",
+        //     solution: "Facilita la búsqueda y visualización de recetas internacionales y locales entregando una experiencia de usuario intuitiva.",
+        //     tags: ["React", "API REST", "CSS"],
+        //     liveDemoUrl: "https://david-hxh.github.io/GourmetGO/",
+        //     repoUrl: "https://github.com/David-HxH/GourmetGO"
+        // }
     ],
 
     // Array de Experiencia Laboral
